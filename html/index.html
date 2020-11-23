@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div id="modal-window-frame" class="modal-frame hide">
+        <div id="modal-window" class="modal">
+            <h3>Инструмент с минимальным весом</h3>
+            <table id="min-table"></table>
+        </div>
+    </div>
+    <form>
+        <div class="row">
+            <h2>Таблица для отображения записей строительных инструментов на складе</h2>
+        </div>
+        <div class="row">
+            <label for="name">Название:
+                <input id="name" class="input-form" type="text" placeholder="Название">
+            </label>
+            <label for="weight">Вес:
+                <input id="weight" class="input-form" type="text" placeholder="Вес">
+            </label>
+        </div>
+        <div class="row">
+            <label for="purpose">Назначение:
+                <input id="purpose" class="input-form" type="text" placeholder="Назначение">
+            </label>
+            <label for="price">Цена:
+                <input id="price" class="input-form" type="text" placeholder="Цена">
+            </label>
+        </div>
+        <div class="row">
+            <button id="add-btn" class="btn-form" type="submit">Ввести новую запись</button>
+            <button id="clear-btn" class="btn-form" type="submit">Очистить форму</button>
+            <button id="del-btn" class="btn-form" type="submit">Удалить запись с ID</button>
+            <select id="select-del"></select>
+            <button id="show-btn" class="btn-form" type="submit">Показать все записи</button>
+        </div>
+        <div class="row">
+            <button id="min-weight-btn" class="btn-form" type="submit">Инструмент с минимальным весом</button>
+            <input id="adress" class="input-adress" type="text" placeholder="Адрес">
+            <button id="add-property-btn" class="btn-form" type="submit">Добавить адрес</button>
+        </div>
+        <table id="my-table" class="table hide">
+            <tr>
+                <td>ID</td>
+                <td>Название</td>
+                <td>Назначение</td>
+                <td>Вес</td>
+                <td>Цена</td>
+                <td>Адрес</td>
+            </tr>
+        </table>
+    </form>
+    <script src="../js/template.js"></script>
+</body>
+</html>
